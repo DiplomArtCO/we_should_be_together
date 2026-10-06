@@ -1,0 +1,53 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1600 1000"
+  role="img"
+  aria-labelledby="map-title map-description"
+>
+  <title id="map-title">Conexión entre Fuengirola y Affalterbach</title>
+  <desc id="map-description">Una línea punteada une dos puntos separados por aproximadamente 1.790 kilómetros en línea recta.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e8e0d4" />
+      <stop offset="1" stop-color="#d9cec0" />
+    </linearGradient>
+    <linearGradient id="route" x1="0" x2="1">
+      <stop offset="0" stop-color="#854e4b" stop-opacity=".72" />
+      <stop offset="1" stop-color="#c79851" stop-opacity=".72" />
+    </linearGradient>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" flood-color="#6d5a4c" flood-opacity=".12" stdDeviation="20" />
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#paper)" />
+  <g fill="none" stroke="#9e8c7a" stroke-linecap="round" opacity=".22">
+    <path d="M-80 225c180-110 330-90 450 10s270 120 390 25 320-120 520 18 280 120 430 30" stroke-width="3" />
+    <path d="M-100 710c240-150 430-130 610-5s350 105 500-25 330-140 620-20" stroke-width="2" />
+    <path d="M220 50c90 150 100 270 25 390s-78 245 45 510" stroke-width="2" />
+    <path d="M1220-40c-85 190-75 330 15 445s110 260-10 610" stroke-width="3" />
+  </g>
+  <g fill="#c5b7a6" opacity=".32">
+    <path d="M90 120c80-50 155-35 210 10l-25 115-135 38-80-80z" />
+    <path d="M590 60l150-40 95 92-80 102-148-35z" />
+    <path d="M1080 180l200-65 120 110-90 130-185-15z" />
+    <path d="M1360 670l170-60 130 105-100 145-185-40z" />
+    <path d="M270 720l150-70 130 80-50 125-190 20z" />
+  </g>
+  <path
+    d="M260 695 C 430 500, 600 630, 760 505 S 1090 365, 1335 255"
+    fill="none"
+    stroke="url(#route)"
+    stroke-dasharray="4 24"
+    stroke-linecap="round"
+    stroke-width="8"
+    filter="url(#soft-shadow)"
+  />
+  <g fill="#854e4b" stroke="#fffaf2" stroke-width="10">
+    <circle cx="260" cy="695" r="22" />
+    <circle cx="1335" cy="255" r="22" />
+  </g>
+  <g fill="#854e4b" opacity=".12">
+    <circle cx="260" cy="695" r="62" />
+    <circle cx="1335" cy="255" r="62" />
+  </g>
+</svg>

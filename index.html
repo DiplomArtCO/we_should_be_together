@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Una carta honesta sobre lo que vivimos y lo que todavía quería decirte."
+    />
+    <title>Lo que quería decirte</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+    <header class="site-header">
+      <p class="brand-mark">Fuengirola <span aria-hidden="true">·</span> Affalterbach</p>
+      <div class="audio-controls">
+        <button
+          class="audio-toggle"
+          id="audio-toggle"
+          type="button"
+          aria-controls="background-audio"
+          aria-pressed="false"
+        >
+          <span class="audio-toggle__icon" aria-hidden="true">♫</span>
+          <span id="audio-toggle-label">Activar música</span>
+        </button>
+        <button
+          class="audio-mute"
+          id="audio-mute"
+          type="button"
+          aria-controls="background-audio"
+          aria-pressed="false"
+        >
+          Silenciar
+        </button>
+      </div>
+      <p class="audio-status" id="audio-status" role="status" aria-live="polite">
+        Autofotos · Melendi
+      </p>
+      <audio
+        id="background-audio"
+        loop
+        preload="metadata"
+        src="assets/audio/autofotos_melendi.mpeg"
+      ></audio>
+    </header>
+
+    <main id="main-content">
+      <section class="hero story-section" id="welcome" aria-labelledby="welcome-title">
+        <div class="hero__content">
+          <p class="eyebrow">Para leer despacio</p>
+          <h1 id="welcome-title">Hay algo que quería decirte.</h1>
+          <p class="hero__lead">
+            No tienes que llegar hasta el final. Puedes cerrar esta página en
+            cualquier momento. Solo quería encontrar una forma tranquila y
+            honesta de hablarte.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#apology">Leer la carta</a>
+            <a class="button button--quiet" href="#closing">Ir al final</a>
+          </div>
+        </div>
+        <p class="scroll-note" aria-hidden="true">Desliza cuando quieras ↓</p>
+      </section>
+
+      <section class="story-section letter-section" id="apology" aria-labelledby="apology-title">
+        <div class="section-heading">
+          <p class="eyebrow">La parte importante</p>
+          <h2 id="apology-title">Lo siento.</h2>
+        </div>
+        <div class="letter-grid">
+          <div class="letter-copy">
+            <p class="lead">
+              Te hice daño, y no quiero esconder esa verdad detrás de palabras
+              bonitas ni de una explicación que cambie lo que pasó.
+            </p>
+            <p>
+              Estoy arrepentido de mi inmadurez y de no haber tenido el compromiso
+              necesario con lo que estábamos construyendo. Sé que eso pudo hacerte
+              sentir que lo nuestro y tus emociones quedaban en segundo plano, y
+              no quiero esconder mi responsabilidad detrás de ninguna excusa.
+            </p>
+            <p>
+              No hice esta página para convencerte de nada. La hice porque
+              quería reconocerlo con calma, agradecer lo que compartimos y
+              decirte que todavía me importas.
+            </p>
+            <blockquote>
+              <p>Lo que vivimos fue importante para mí, y también quiero reconocer con honestidad cómo pude hacerte sentir.</p>
+            </blockquote>
+          </div>
+          <aside class="side-note" aria-label="Una nota sobre la carta">
+            <span class="side-note__line" aria-hidden="true"></span>
+            <p>
+              No tienes que responder ahora.<br />
+              No tienes que responder nunca.
+            </p>
+          </aside>
+        </div>
+        <a class="section-link" href="#distance">Seguir leyendo <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section
+        class="story-section distance-section"
+        id="distance"
+        aria-labelledby="distance-title"
+      >
+        <div class="distance-map" aria-hidden="true"></div>
+        <div class="distance-content">
+          <div class="section-heading">
+            <p class="eyebrow">Dos lugares, dos momentos</p>
+            <h2 id="distance-title">La distancia nunca contó toda la historia.</h2>
+          </div>
+          <p class="section-intro">
+            Tú en Fuengirola. Yo en Affalterbach. Entre los dos lugares hubo
+            aproximadamente 1.790 kilómetros en línea recta, mensajes y dos
+            momentos en los que pudimos estar cerca de verdad.
+          </p>
+          <div class="location-pair" aria-label="Aproximadamente 1.790 kilómetros en línea recta entre nuestros lugares">
+            <div class="location">
+              <span class="location__dot" aria-hidden="true"></span>
+              <span class="location__label">Fuengirola</span>
+              <span class="location__country">Málaga, España</span>
+            </div>
+            <span class="location-route" aria-hidden="true"></span>
+            <p class="location-distance">≈ 1.790 km<br /><span>en línea recta</span></p>
+            <div class="location location--right">
+              <span class="location__dot" aria-hidden="true"></span>
+              <span class="location__label">Affalterbach</span>
+              <span class="location__country">Alemania</span>
+            </div>
+          </div>
+
+          <div class="floating-gallery" aria-label="Recuerdos visuales complementarios">
+            <figure class="floating-detail floating-detail--photo-three">
+              <img
+                src="assets/photos/foto-tres.jpeg"
+                alt="Detalle cercano de los dos compartiendo un momento de intimidad"
+                width="360"
+                height="480"
+                loading="lazy"
+              />
+              <figcaption class="sr-only">Foto tres, recuerdo complementario.</figcaption>
+            </figure>
+            <figure class="floating-detail floating-detail--chat-one">
+              <img
+                src="assets/photos/chat-uno.jpeg"
+                alt="Captura de una conversación en la que aparece el mensaje «Te amo»"
+                width="1024"
+                height="360"
+                loading="lazy"
+              />
+              <figcaption class="sr-only">Chat uno, recuerdo complementario.</figcaption>
+            </figure>
+            <figure class="floating-detail floating-detail--photo-four">
+              <img
+                src="assets/photos/foto-cuatro.jpeg"
+                alt="Las manos de los dos juntas sobre una mesa"
+                width="360"
+                height="480"
+                loading="lazy"
+              />
+              <figcaption class="sr-only">Foto cuatro, recuerdo complementario.</figcaption>
+            </figure>
+            <figure class="floating-detail floating-detail--chat-two">
+              <img
+                src="assets/photos/chat-dos.jpeg"
+                alt="Captura de una conversación con un comentario cariñoso y divertido"
+                width="1024"
+                height="360"
+                loading="lazy"
+              />
+              <figcaption class="sr-only">Chat dos, recuerdo complementario.</figcaption>
+            </figure>
+            <figure class="floating-detail floating-detail--chat-three">
+              <img
+                src="assets/photos/chat-tres.jpeg"
+                alt="Captura de una conversación con una broma compartida"
+                width="1024"
+                height="360"
+                loading="lazy"
+              />
+              <figcaption class="sr-only">Chat tres, recuerdo complementario.</figcaption>
+            </figure>
+            <figure class="floating-detail floating-detail--chat-four">
+              <img
+                src="assets/photos/chat-cuatro.jpeg"
+                alt="Captura de una conversación con un mensaje cariñoso"
+                width="1024"
+                height="480"
+                loading="lazy"
+              />
+              <figcaption class="sr-only">Chat cuatro, recuerdo complementario.</figcaption>
+            </figure>
+          </div>
+
+          <div class="memory-list">
+            <article class="memory-card">
+              <div class="memory-card__image-wrap">
+                <img
+                  class="memory-card__image"
+                  src="assets/photos/foto-uno.jpeg"
+                  alt="Foto uno: los dos sentados juntos y sonriendo en un local"
+                  width="1024"
+                  height="768"
+                  loading="lazy"
+                />
+              </div>
+              <div class="memory-card__body">
+                <p class="eyebrow">Primer momento</p>
+                <h3>Después de tantos años, la vida nos volvió a juntar.</h3>
+                <p>
+                  Después de todo ese tiempo, volver a encontrarnos hizo que
+                  aquel momento tuviera un significado muy especial.
+                </p>
+              </div>
+            </article>
+
+            <article class="memory-card memory-card--reverse">
+              <div class="memory-card__image-wrap">
+                <img
+                  class="memory-card__image"
+                  src="assets/photos/foto-dos.jpeg"
+                  alt="Foto dos: los dos besándose frente al paseo marítimo"
+                  width="768"
+                  height="1024"
+                  loading="lazy"
+                />
+              </div>
+              <div class="memory-card__body">
+                <p class="eyebrow">Segundo momento</p>
+                <h3>Todo lo que hicimos para volver a vernos valió la pena.</h3>
+                <p>
+                  Todo lo que hemos hecho para volver a vernos y seguir estando
+                  juntos ha valido la pena por lo que sentimos.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <a class="section-link" href="#closing">Llegar al cierre <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="story-section closing-section" id="closing" aria-labelledby="closing-title">
+        <div class="closing-card">
+          <p class="eyebrow">Sin presión</p>
+          <h2 id="closing-title">Si algún día quieres hablar, me gustaría escucharte y también ser escuchado.</h2>
+          <p>
+            No espero que esta página cambie lo que sientes. Solo quería
+            ofrecerte una disculpa sincera y dejar una puerta abierta, sin
+            empujarte a cruzarla.
+          </p>
+          <p>
+            Gracias por lo que compartimos. De verdad.
+          </p>
+          <p class="closing-signature">— Sergio</p>
+        </div>
+        <div
+          class="conversation-action"
+          id="conversation-action"
+          data-conversation-link=""
+          aria-live="polite"
+        ></div>
+        <div class="tun-tun-secret" aria-label="Detalle escondido de la página">
+          <img
+            src="assets/photos/tun_tun.png"
+            alt="Pequeño personaje escondido como detalle de la página"
+            width="315"
+            height="315"
+          />
+        </div>
+        <p class="closing-footnote">
+          Puedes cerrar esta página aquí. No tienes que hacer nada más.
+        </p>
+      </section>
+    </main>
+
+    <button class="bear-trigger" id="bear-trigger" type="button" aria-label="Descubrir una pequeña sorpresa">
+      <span aria-hidden="true">🐻</span>
+    </button>
+
+    <dialog class="proposal-dialog" id="proposal-dialog" aria-labelledby="proposal-title">
+      <div class="proposal-dialog__inner">
+        <button class="dialog-close" id="proposal-close" type="button" aria-label="Cerrar propuesta">
+          <span aria-hidden="true">×</span>
+        </button>
+        <p class="eyebrow">Una pregunta escondida</p>
+        <h2 id="proposal-title">¿Quieres ser mi novia?</h2>
+        <p>
+          Te lo pregunto de forma directa porque es lo que siento. No tienes
+          que contestar ahora, ni tienes que contestar que sí. Solo quería
+          dejarte esta pregunta sin presión.
+        </p>
+        <p class="proposal-dialog__quiet">La salida sigue estando aquí. Siempre.</p>
+      </div>
+    </dialog>
+
+    <noscript>
+      <p class="noscript-note">
+        Esta carta se puede leer sin JavaScript. La música y la pequeña sorpresa
+        necesitan activar JavaScript, pero no son necesarias para entender el mensaje.
+      </p>
+    </noscript>
+  </body>
+</html>
